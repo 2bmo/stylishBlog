@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 gulp.task('default', function (callback) {
-    runSequence(['copy-fonts','png-sprite','svg-sprite','copy-images','sass','watch'],
+    runSequence(['copy-fonts','png-sprite','svg-sprite','copy-images','copy-css','sass','watch'],
         callback
     )
 });
@@ -101,4 +101,8 @@ gulp.task('copy-fonts', function () {
 gulp.task('copy-images', function () {
     gulp.src('dev/img/*.{png,svg,jpg}')
         .pipe(gulp.dest('res/img'));
+});
+gulp.task('copy-css', function () {
+    gulp.src('dev/cscc/**/*.css')
+        .pipe(gulp.dest('res/css'));
 });
