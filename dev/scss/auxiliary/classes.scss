@@ -1,0 +1,83 @@
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "vars.scss";
+@import "pics.scss";
+@import "shapes.scss";
+@import "../slick.scss";
+
+.main {
+  margin: 0;
+  padding: 0;
+  @extend .border-box;
+}
+.button-none {
+  border: none;
+  padding: 0;
+  margin: 0;
+  @extend .pointer;
+  @extend .outline-none;
+}
+.a-none {
+  text-decoration: none;
+  @extend .pointer;
+}
+.ul-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+.pointer {
+  cursor: pointer;
+}
+.outline-none {
+  outline: none;
+}
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+.middle-block {
+  margin: 0 auto;
+}
+.margin-none {
+  margin: 0;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+@mixin flexy ($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+
+
+

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "MinionPro";
+  src: url("../../font/MinionPro/MinionPro-regular.woff2") format('woff2'),
+  url("../../font/MinionPro/MinionPro-regular.woff") format('woff'),
+  url("../../font/MinionPro/MinionPro-regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url("../../font/Verdana/Verdana-regular.woff2") format('woff2'),
+  url("../../font/Verdana/Verdana-regular.woff") format('woff'),
+  url("../../font/Verdana/Verdana-regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url("../../font/Verdana/Verdana-italic.woff2") format('woff2'),
+  url("../../font/Verdana/Verdana-italic.woff") format('woff'),
+  url("../../font/Verdana/Verdana-italic.ttf") format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+$pink: #de004e;
+$commonText: #747474;
+$headline-h3: #555555;
+$headline-date: #999;
+$news: #000; // < black
+$h5: #838383;
+$nav: #646363; // + search, page sub-title
+$title: #878787;
+$footer: #575656;
+$pageBorder: #ddd;
+$news-border: #d7d7d7;
+$blockBorder: #ebebeb;
+$search-bg: #ededed;
+
+$w1180: max-width 1180px;
+$w820: max-width 820px;
+$w480: max-width 480px;
