@@ -95,7 +95,7 @@ gulp.task('post', function (callback) {
     )
 });
 gulp.task('copy-fonts', function () {
-    gulp.src('dev/font/**/*.{ttf,woff,woof2,otf,eot,svg}')
+    gulp.src('dev/font/**/*.{ttf,woff,woff2,otf,eot,svg}')
         .pipe(gulp.dest('res/font'));
 });
 gulp.task('copy-images', function () {
