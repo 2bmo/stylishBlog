@@ -1,11 +1,6 @@
 let windowWidth = window.innerWidth,
-    newsHeaders = document.getElementsByClassName("news__header"),
-    headlines = document.getElementsByClassName("headlines");
-
-function vanish(element) {
-    element.parentElement.removeChild(element);
-}
-
+    newsHeaders = document.getElementsByClassName("news__header");
+    
 $(document).ready(function(){
     $('.slick').slick({
         infinite: true,
@@ -26,6 +21,8 @@ $(document).ready(function(){
         for (let i=0; i < newsHeaders.length; i++) {
             newsHeaders[i].innerHTML = "Рафаэль Надаль проиграл сотой ракетке мира. Испанский теннесист Рафаэль На...";
         }
-        vanish(headlines[2]);
+        $('.news').after($('.slick'));
+        $('.left-col .headlines').after($('.right-col .left-right'));
+        $('.comments').wrap('<div class="left-right"></div>').after($('.archives'));
     }
 });
